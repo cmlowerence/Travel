@@ -1,0 +1,652 @@
+/* * ===================== Common Classes ===================== */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.btn {
+  outline-color: transparent;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(.98);
+}
+
+.baseline {
+  width: 80%;
+  margin-block: 1rem;
+  margin-bottom: 3rem;
+  margin-inline: auto;
+  height: 3px;
+  background-color: #cccccc;
+  border-radius: 3px;
+  border: none;
+}
+
+/**============================= Home =============================*/
+
+.homeWrapper {
+  background: url("../img/home_images/flight_pic1.jpg"), no-repeat;
+  background-size: cover;
+  height: min(100dvh, 50rem);
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.homeWrapper * {
+  font-family: var(--mainBodyTextFont);
+}
+
+/* * Home heading */
+.homeWrapper .homeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeText .mainHeading {
+  margin-top: 5rem;
+  font-size: 6rem;
+  color: transparent;
+  text-shadow: 1px 1px 1.5px rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.homeText .supportingText {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* * Button */
+.big-btn {
+  position: absolute;
+  bottom: min(3rem, 8%);
+}
+
+.big-btn .btn {
+  padding-inline: 3rem;
+  height: 3rem;
+  background-color: hsl(39, 79%, 49%);
+  border-radius: 3rem;
+  color: #fff;
+  font-weight: 600;
+  font-family: var(--mainBodyTextFont);
+  transition: .3s all ease-in-out;
+}
+
+.big-btn .btn:hover {
+  background-color: wheat;
+  color: #333;
+}
+
+/* *Play button */
+.homeWrapper .videoLink {
+  position: absolute;
+  bottom: min(3%, 1rem);
+  left: min(3%, 1rem);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  z-index: 10;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+.videoLink:hover .videoIcon {
+  color: #7135d8;
+}
+
+.videoLink .videoIcon {
+  transition: .3s all ease-in-out;
+  font-size: 2.5rem;
+}
+
+.videoLink .videoText {
+  display: grid;
+  row-gap: .3rem;
+}
+
+.videoText p {
+  font-family: var(--mainBodyTextFont);
+
+}
+
+.videoText .videoWatchTextSm {
+  font-size: .9rem;
+  font-family: var(--mainBodyTextFont);
+}
+
+.videoText .videoDesc {
+  font-size: 1.2rem;
+}
+
+
+/**============================= Intro =============================*/
+.introWrapper {
+  padding-block-start: 4rem;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: auto !important;
+}
+
+.introWrapper * {
+  font-family: var(--mainBodyTextFont);
+}
+
+.introText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 80%;
+  gap: 10px;
+}
+
+.introHeading {
+  font-size: 4rem;
+  font-family: var(--mainBodyTextFont);
+}
+
+.introDesc p {
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: var(--mainBodyDescText);
+}
+
+.introDesc p a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #010101c6;
+}
+
+.servicesCardsWrapper.swiper {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 1rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+  padding: 2.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: var(--defaultCardShadow);
+  transition: .3s ease-in-out;
+}
+
+.card.active {
+  background-color: #e7e7e7e6;
+}
+
+.card-icon i {
+  font-size: 3rem;
+  color: #ff8800;
+}
+
+.card-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.card-desc {
+  font-size: 1.025rem;
+  color: #717171;
+  text-align: left;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: orange;
+}
+
+.servicesCardsWrapper.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  position: static;
+  padding-top: 2rem;
+  margin: auto;
+  text-align: center;
+  z-index: 10;
+}
+
+/**============================= Destination =============================*/
+
+.destinationWrapper {
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destinationWrapper * {
+  font-family: var(--mainBodyTextFont);
+}
+
+.destinationTextWrapper {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.destinationHeading {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #010101;
+}
+
+.destinationDesc {
+  font-family: var(--mainBodyDescText);
+  font-size: 1.8rem;
+  color: #565656;
+}
+
+.searchBoxWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox label {
+  display: flex;
+  gap: 5px;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchIcon i {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #565656;
+}
+
+.searchInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput input {
+  width: 300px;
+  outline: none;
+  border: none;
+  padding: 2px 10px;
+  background-color: transparent;
+  font-size: 1.8rem;
+  font-family: var(--mainBodyTextFont);
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* *Destination Card Wrappers */
+.destination-cards {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.destinationCardsWrapper.swiper {
+  width: 80%;
+  height: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-block: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.destinationCardsWrapper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.destinationCardsWrapper.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  z-index: 10;
+  position: static;
+  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+.destination_img-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff96;
+  position: relative;
+}
+
+.destination_img-slide * {
+  transition: .3s all ease-in-out;
+}
+
+.destination_img-slide p {
+  opacity: 0;
+  transform: scale(0);
+  font-family: var(--mainBodyTextFont);
+  font-size: 2rem;
+  font-weight: 600;
+  position: absolute;
+}
+
+.destination_img-slide:hover p {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.destination_img-slide:hover img {
+  opacity: .4;
+}
+
+.slideBtn {
+  position: absolute;
+  text-align: center;
+  /* background-color: yellow; */
+  color: orange;
+  font-size: 4rem;
+}
+
+.destination_swiper-button-prev {
+  left: 1rem;
+}
+
+.destination_swiper-button-next {
+  right: 1rem;
+}
+
+/* *----------------- Blog Container -----------------* */
+#blog>.container {
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogTextWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 75%;
+}
+
+.blogHeading {
+  font-family: var(--mainBodyTextFont);
+  font-size: 4rem;
+}
+
+.blogDesc {
+  font-family: var(--mainBodyDescText);
+  font-size: 1.5rem;
+  color: #717171;
+}
+
+/* <========= Blog Cards ========>*/
+.blogCardWrapper{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 13rem);
+  grid-template-rows: repeat(3, 13rem);
+  transition: .3s all ease-in-out;
+}
+.blogCard {
+  position: relative;
+  background-color: rgba(236, 236, 236, 0.707);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: -2px 2px 15px rgba(238, 201, 14, 0.4), inset -1px 1px 6px rgba(182, 180, 180, 0.596);
+  cursor: pointer
+}
+.blogCard.card1{
+  grid-area: 1/ 1/ span 2/ span 2;
+  background: url('../img/BlogImages/main.jpg') no-repeat;
+  background-size: cover;
+}
+
+.blogCard.card2{
+  flex-direction: column;
+  grid-row: 1/ span 2;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.blogCard.card2 .blogCardImage{
+  height: 100% !important;
+  background : url('../img/BlogImages/img1.jpg') no-repeat;
+  background-size: cover;
+}
+
+.blogCard.card3{
+  background: url('../img/BlogImages/img2.jpg') no-repeat;
+  background-size: cover;
+}
+.blogCard.card4{
+  flex-direction: column;
+  grid-row: 2/ span 2;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.blogCard.card4 .blogCardImage{
+  height: 100%;
+  background : url('../img/BlogImages/img3.jpg') no-repeat;
+  background-size: cover;
+}
+
+.blogCard.card5{
+  grid-column: 1/ span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.blogCard.card5 .blogCardImage{
+  height: 100%;
+  background : url('../img/BlogImages/img4.jpg') no-repeat;
+  background-size: cover;
+}
+.blogCard.card6{
+  background : url('../img/BlogImages/img6.jpg') no-repeat;
+  background-size: cover;
+}
+
+.blogCard .blogCardText{
+  padding: .7rem;
+  font-family: var(--mainBodyDescText);
+  line-height: 1.2rem;
+  font-size: 1rem;
+  place-self: center;
+}
+
+.btn#readMore {
+  margin-top: 30px;
+}
+
+#readMore {
+  padding-inline: 3rem;
+  height: 3rem;
+  background-color: hsl(39, 79%, 49%);
+  border-radius: 3rem;
+  color: #fff;
+  font-weight: 600;
+  font-family: var(--mainBodyTextFont);
+  transition: .3s all ease-in-out;
+}
+
+#readMore:hover {
+  background-color: wheat;
+  color: #333;
+}
+
+
+
+
+/* *-------------------- Client Section --------------------* */
+
+.clientsWrapper{
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clientReviewTextWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 75%;
+}
+.clientReviewHeading{
+  font-size: 4rem;
+  font-family: var(--mainBodyTextFont);
+  font-weight: 600;
+  color:#565656;
+}
+.clientReviewDesc{
+  font-size: 1.5rem;
+  font-family: var(--mainBodyDescText);
+  color: #717171;
+}
+
+/* Review card */
+.clientReview_testimony{
+  width: 65%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.clientReview_testimony::before, .clientReview_testimony::after{
+  isolation: isolated;
+  content: '"';
+  position: absolute;
+  font-family: var(--commaTextFont);
+  font-size: 18rem;
+  color: #e0e0e0a6;
+  z-index: 100;
+}
+.clientReview_testimony::before{
+  top: -8rem;
+  left: -6rem;
+  transform: rotateY(180deg);
+}
+.clientReview_testimony::after{
+  right: -6rem;
+  bottom: -18rem;
+}
+.clientReviewCard{
+  padding-block: 1rem; 
+}
+.clientReviewCard .__clientReviewCard__{
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  width: 40rem;
+  height: 12rem;
+  gap: 30px;
+  border-radius: .5rem;
+  padding: .8rem 1.4rem;
+  box-shadow: 8px 8px 20px #b89b4c7b, -2px -2px 15px #b89b4c7b;
+}
+.clientReviewCardImage{
+  display: inline-block;
+  height:9.4rem;
+  width: 9.4rem;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: var(--defaultCardShadow);
+}
+.clientReviewCardImage img{
+  width: 100%;
+  aspect-ratio: 1;
+}
+.clientReviewCardTextWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2.3rem;
+  max-width: 70%;
+}
+.clientReviewText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-family: var(--clientReviewTextFont);
+  font-size: 1rem;
+  color: #525050;
+}
+.clientDesc{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 1.8rem;
+}
+.clientName{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff8800;
+  font-family: var(--clientNameTextFont);
+}
+.clientPlace{
+  font-family: var(--clientReviewTextFont);
+  font-size: 1rem;
+}
+.clientReviewCardsWrapper .indicator-wrapper{
+  gap: 2rem;
+  margin-top: 5rem;
+}
+

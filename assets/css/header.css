@@ -1,0 +1,138 @@
+#hamburger {
+  background-color: transparent;
+  border: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  gap: 3px;
+  transition: .3s all ease-in-out;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 2px;
+  outline-offset: .3rem;
+}
+
+#hamburger:focus-visible {
+  outline: 3px solid;
+  outline-color: hotpink;
+}
+
+.burgerLine {
+  height: 3px;
+  width: 98%;
+  border-radius: 3px;
+  background-color: var(--clr-nav);
+  outline: .5px solid #333;
+  transition: transform .3s, opacity .2s ease-in-out;
+}
+
+#hamburger.active .burgerLine:nth-child(1) {
+  transform: translateY(6px) rotate(225deg);
+  transform-origin: center;
+}
+
+#hamburger.active .burgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger.active .burgerLine:nth-child(3) {
+  transform: translateY(-6px) rotate(-225deg);
+  transform-origin: center;
+}
+
+/* =================== Navbar ==================== */
+.navbar {
+  --clr-nav: hsl(0, 0%, 0%);
+  display: flex;
+  width: 100%;
+  padding-block: .7rem;
+  position: fixed;
+  top: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--clr-nav);
+  transition: .3s all ease-in-out;
+  z-index: 100;
+}
+
+.scroll-navbar {
+  /* --clr-nav: rgb(8, 121, 187); */
+  background-color: rgba(240, 240, 240, 0.65);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+}
+
+.navbar.no_home {
+  background-color: hsla(0, 0%, 38%, 0.185);
+}
+
+.navWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-inline: min(.5rem, 3vw);
+}
+
+
+/* *--------------------------- Left Nav -------------------------- */
+.leftNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  padding-inline: 2rem;
+  color: var(--clr-nav);
+  transition: .3s all ease-in-out;
+}
+
+.leftNav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  color: inherit;
+  transition: .4s all ease-in-out;
+}
+
+.leftNav ul li {
+  padding: .5rem .8rem;
+  transition: .2s all ease-in-out;
+  color: inherit;
+}
+
+.leftNav ul li a {
+  color: inherit;
+  transition: .3s all ease-in-out;
+}
+
+/* * -------------------------------- Right nav ------------------------- */
+.rightNav {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactNum_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+#contactIcon {
+  font-size: 1.5rem;
+}
+
+/* * Hover effects */
+.leftNav ul li:hover a {
+  color: rgb(255, 40, 133);
+  transform: scale(1.105);
+}

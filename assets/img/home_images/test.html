@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Slider</title>
+  <style>
+    /* Add any additional styles here */
+    .slider-container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Add navigation styles */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* Add additional styling as needed */
+  </style>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slides">
+    <div class="slide" style="background-color: #f00;">Slide 1</div>
+    <div class="slide" style="background-color: #0f0;">Slide 2</div>
+    <div class="slide" style="background-color: #00f;">Slide 3</div>
+    <!-- Add more slides as needed -->
+  </div>
+
+  <!-- Navigation buttons -->
+  <div class="prev" onclick="prevSlide()">❮</div>
+  <div class="next" onclick="nextSlide()">❯</div>
+</div>
+
+<script>
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    const slides = document.querySelector('.slides');
+    const slideWidth = document.querySelector('.slide').offsetWidth;
+    const newTransformValue = -index * slideWidth + 'px';
+    slides.style.transform = 'translateX(' + newTransformValue + ')';
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    const totalSlides = document.querySelectorAll('.slide').length;
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    const totalSlides = document.querySelectorAll('.slide').length;
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+  }
+</script>
+
+</body>
+</html>

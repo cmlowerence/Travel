@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour and Travels</title>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="./assets/css/swiper-min.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="preload"
+      as="css"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <!-- Icon Scout CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./assets/css/root.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/header.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="./assets/css/footer.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/media.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+
+  <body>
+    <!-- ============================= Header ======================================= -->
+    <header id="header"></header>
+
+    <!-- ============================= Main ======================================= -->
+    <main>
+      <nav class="navbar">
+        <button id="hamburger" tabindex="1">
+          <span class="burgerLine"></span>
+          <span class="burgerLine"></span>
+          <span class="burgerLine"></span>
+        </button>
+        <div class="navWrapper">
+          <div class="leftNav" id="navLinks">
+            <ul id="navLink_list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#intro">Services</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#clients">Our Clients</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="rightNav">
+            <span class="contactNum_container" for="contactNumber">
+              <span id="contactNumber"
+                ><i id="contactIcon" class="uil uil-phone-alt"></i> +91
+                98765-43210</span
+              >
+            </span>
+          </div>
+        </div>
+      </nav>
+      <!-- ============================= Home ============================== -->
+      <section id="home">
+        <div class="container homeWrapper">
+          <span class="homeText">
+            <span class="mainHeading">Fusion Travel</span>
+            <span class="supportingText"
+              >Let's discover the world Together</span
+            >
+          </span>
+          <span class="big-btn"
+            ><button class="btn" >
+              Plan Your Trip
+            </button></span
+          >
+          <span class="videoLink">
+            <span class="videoIcon"><i class="uil uil-play-circle"></i></span>
+            <span class="videoText">
+              <p class="videoWatchTextSm">Watch</p>
+              <p class="videoDesc">Intro Video</p>
+            </span>
+          </span>
+        </div>
+      </section>
+
+      <!-- =============== Intro ================ -->
+      <section id="intro">
+        <div class="container introWrapper">
+          <div class="introText">
+            <h1 class="introHeading sectionHeading">Welcome to Fusion</h1>
+            <div class="introDesc sectionDesc">
+              <p>
+                Our Tour and Travel company is listed in world's top 100 Tour
+                and Travel companies. We provides many packages for clients so
+                that they can have variations for their vacations. We provides
+                Traveling services all over the world. Our main office is
+                situated at USA California. To know more about us visit this
+                link: <a href="#about" id="know-more">Know More</a>
+              </p>
+            </div>
+          </div>
+          <div class="swiper mySwiper servicesCardsWrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <span class="card-icon reputation">
+                    <i class="uil uil-heart-alt"></i>
+                  </span>
+                  <span class="card-heading reputation-heading">
+                    Best Travel Agency
+                  </span>
+                  <span class="card-desc reputation-desc">
+                    We provide best traveling experience to our clients by
+                    interacting with them alongside when they are traveling so
+                    that if they get any trouble, we can sort them on the spot.
+                  </span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <span class="card-icon safety">
+                    <i class="uil uil-favorite"></i>
+                  </span>
+                  <span class="card-heading safety-heading">
+                    Trust & Safety
+                  </span>
+                  <span class="card-desc safety-desc">
+                    Trust is our best asset and Safety is our first priority. We
+                    provide clients a luxury experience so that they have not to
+                    worry about anything.
+                  </span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <span class="card-icon pricing">
+                    <i class="uil uil-plane-departure"></i>
+                  </span>
+                  <span class="card-heading pricing-heading">
+                    Best Price Guarantee
+                  </span>
+                  <span class="card-desc pricing-desc">
+                    Here you will get best prices for your vacation plans with
+                    variety of offers. We make plans as our users will have
+                    compatibility.
+                  </span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <span class="card-icon pricing">
+                    <i class="uil uil-plane-departure"></i>
+                  </span>
+                  <span class="card-heading pricing-heading">
+                    Best Price Guarantee
+                  </span>
+                  <span class="card-desc pricing-desc">
+                    Here you will get best prices for your vacation plans with
+                    variety of offers. We make plans as our users will have
+                    compatibility.
+                  </span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <span class="card-icon pricing">
+                    <i class="uil uil-plane-departure"></i>
+                  </span>
+                  <span class="card-heading pricing-heading">
+                    Best Price Guarantee
+                  </span>
+                  <span class="card-desc pricing-desc">
+                    Here you will get best prices for your vacation plans with
+                    variety of offers. We make plans as our users will have
+                    compatibility.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="servicesCard_swiper-pagination"></div>
+          </div>
+
+          <hr class="baseline" />
+        </div>
+      </section>
+
+      <!-- =============== Destinations ============== -->
+      <section id="destination">
+        <div class="container destinationWrapper">
+          <div class="destinationTextWrapper">
+            <h1 class="destinationHeading sectionHeading">
+              Find Your Destination
+            </h1>
+            <span class="destinationDesc sectionDesc"
+              >Most Popular Places Are Waiting For You</span
+            >
+            <span class="searchBoxWrapper">
+              <span class="searchBox">
+                <label for="search">
+                  <span class="searchIcon"
+                    ><i class="uil uil-search-alt"></i>
+                  </span>
+                  <span class="searchInput">
+                    <input
+                      type="search"
+                      name="search"
+                      id="search"
+                      placeholder="Search..."
+                      value=""
+                    />
+                  </span>
+                </label>
+              </span>
+            </span>
+          </div>
+          <div class="destination-cards">
+            <div class="swiper destinationCardsWrapper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <span class="destination_img-slide">
+                    <p>Thailand</p>
+                    <img src="./assets//img/thialand.jpeg" alt="Thailand" />
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="destination_img-slide">
+                    <p>Australia</p>
+                    <img src="./assets/img/australia.jpg" alt="Australia" />
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="destination_img-slide">
+                    <p>Indonesia</p>
+                    <img src="./assets/img/indonesia.jpg" alt="Indonesia" />
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="destination_img-slide">
+                    <p>France</p>
+                    <img src="./assets/img/france.jpg" alt="France" />
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="destination_img-slide">
+                    <p>Malaysia</p>
+                    <img src="./assets/img/malaysia.jpg" alt="Malaysia" />
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="destination_img-slide">
+                    <p>UAE</p>
+                    <img
+                      src="./assets/img/uae.jpg"
+                      alt="United Emirates Arab"
+                    />
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="destination_img-slide">
+                    <p>UAE</p>
+                    <img
+                      src="./assets/img/uae.jpg"
+                      alt="United Emirates Arab"
+                    />
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="destination_img-slide">
+                    <p>UAE</p>
+                    <img
+                      src="./assets/img/uae.jpg"
+                      alt="United Emirates Arab"
+                    />
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="destination_img-slide">
+                    <p>UAE</p>
+                    <img
+                      src="./assets/img/uae.jpg"
+                      alt="United Emirates Arab"
+                    />
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="destination_img-slide">
+                    <p>UAE</p>
+                    <img
+                      src="./assets/img/uae.jpg"
+                      alt="United Emirates Arab"
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              id="destinationCardSlideLeft"
+              class="slideBtn destination_swiper-button-prev"
+            >
+              <i class="uil uil-arrow-left"></i>
+            </div>
+            <div
+              id="destinationCardSlideRight"
+              class="slideBtn destination_swiper-button-next"
+            >
+              <i class="uil uil-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <hr class="baseline" />
+      </section>
+
+      <!-- ==================== Blog ==================== -->
+      <section id="blog">
+        <div class="container blog_container">
+          <div class="blogTextWrapper">
+            <h1 class="blogHeading sectionHeading">Latest News From Blog</h1>
+            <p class="blogDesc sectionDesc">
+              See Whats People Are Sharing Their Thoughts
+            </p>
+          </div>
+          <div class="blogCardWrapper">
+            <span class="blogCard card1">
+              <span class="blogCardImage"> </span>
+              <span class="blogCardText"></span>
+            </span>
+            <span class="blogCard card2">
+              <span class="blogCardImage"> </span>
+              <span class="blogCardText"
+                >In geology, a sill is a tabular sheet intrusion that has
+                intruded between older layers of sedimentary rock, beds of
+                volcanic lava or tuff, or along the direction of foliation in
+                metamorphic rock</span
+              >
+            </span>
+            <span class="blogCard card3">
+              <span class="blogCardImage"></span>
+              <span class="blogCardText"></span>
+            </span>
+            <span class="blogCard card4">
+              <span class="blogCardImage"></span>
+              <span class="blogCardText"
+                >Costa Rica's road to decarbonisation is paved with political
+                vision and painstaking planning - according to Andrea Meza, the
+                country's Director of Climate Change.</span
+              >
+            </span>
+            <span class="blogCard card5">
+              <span class="blogCardImage"> </span>
+              <span class="blogCardText"
+                >The Great Wall of China is a series of fortifications that were
+                built across the historical northern borders of ancient Chinese
+                states and Imperial China</span
+              >
+            </span>
+            <span class="blogCard card6">
+              <span class="blogCardImage"> </span>
+              <span class="blogCardText"></span>
+            </span>
+          </div>
+          <div class="btn-wrapper">
+            <button id="readMore" class="btn" >
+              Keep Reading
+            </button>
+          </div>
+          <hr class="baseline" />
+        </div>
+      </section>
+
+      <!-- =============== Clients ================ -->
+      <section id="clients">
+        <div class="container clientsWrapper">
+          <div class="clientReviewTextWrapper">
+            <div class="clientReviewHeading sectionHeading">
+              What Our Client Say
+            </div>
+            <div class="clientReviewDesc sectionDesc">
+              People’s sharing their thought about our works.
+            </div>
+          </div>
+          <div class="clientReview_testimony">
+            <div class="swiper clientReviewCardsWrapper"></div>
+          </div>
+            <div class="client-indicator-wrapper">
+            </div>
+          </div> 
+          <hr class="baseline" />
+        </div>
+      </section>
+    </main>
+
+    <!-- ================== Footer ================== -->
+    <footer class="footer">
+      <div class="footerBookingBanner">
+        <div class="footerBookingBannerText">
+          Get Special Discount on your first journey!
+        </div>
+        <div class="footerBookingBannerButton">
+          <button class="footerBtn btn">
+            Book Now
+          </button>
+        </div>
+      </div>
+      <div class="footer-Links">
+        <div class="footerContactDetails" id="contact">
+          <span class="footerAboutUs footer-boxes">
+            <span class="footer-heading" id="about">About Us</span>
+            <ul class="footer-AboutUs-list footer-DescText">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </span>
+          <span class="footerAddress footer-boxes">
+            <span class="footer-heading">Address</span>
+            <span class="footer-DescText">
+              <span class="footer-AddressTextMain">4433 Heaven Court</span>
+              <span class="footer-AddressTextAddon">Mexico</span>
+            </span>
+          </span>
+          <span class="footerContact footer-boxes">
+            <span class="footer-heading">Contact Us</span>
+            <span class="footer-DescText">
+              <span class="footer-email">
+                Email: cmlowerence2777@gmail.com
+              </span>
+              <span class="footer-mobile"> Tel: +91 9876543210 </span>
+            </span>
+          </span>
+          <span class="footerFollowUs footer-boxes">
+            <span class="footer-heading">Follow Us</span>
+            <ul class="footer-FollowUs-list footer-DescText">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="uil uil-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="uil uil-instagram-alt"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/cmlowerence"
+                  ><i class="uil uil-github"></i></a>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <hr class="baseline" />
+      <div class="copyrightText">
+        Copyright &copy; 2023, All Rights Reserved
+      </div>
+    </footer>
+
+    <!-- ============================= JS Scripts ======================================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      let serviceCardSwiper = new Swiper(".mySwiper", {
+        // slidesPerView: 2,
+        spaceBetween: 40,
+        loop: true,
+        grabCursor: true,
+        pagination: {
+          el: ".servicesCard_swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          1800: {
+            slidesPerView: 4,
+          },
+          900: {
+            slidesPerView: 3,
+          },
+          700: {
+            slidesPerView: 2,
+          },
+          100: {
+            slidesPerView: 1,
+          },
+        },
+      });
+
+      let destinationCardSwiper = new Swiper(".destinationCardsWrapper", {
+        // slidesPerView: 3,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 40,
+        loop: true,
+        navigation: {
+          nextEl: ".destination_swiper-button-next",
+          prevEl: ".destination_swiper-button-prev",
+        },
+        breakpoints: {
+          700: {
+            slidesPerView: 3,
+          },
+          400: {
+            slidesPerView: 2,
+          },
+          100: {
+            slidesPerView: 1,
+            grid: {
+              rows: 1,
+            },
+          },
+        },
+      });
+
+      let clientReviewSwiper = new Swiper(".clientReviewCardsWrapper",{
+        spaceBetween: 40,
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          // el: ".servicesCard_swiper-pagination",
+          clickable: true,
+        },
+      })
+    </script>
+    <script src="./assets/js/swiper-min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+<!-- <img src="https://source.unsplash.com/random/1024x500/?science"> -->

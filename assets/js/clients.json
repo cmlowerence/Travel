@@ -1,0 +1,39 @@
+{
+  "clients" : [
+    {
+      "id" : "1",
+      "name" : "Cat Valentine",
+      "photo" : "./assets/img/clients/cat_valentine.jpg",
+      "address" : "Beverly Hills L.A. (USA)",
+      "review" : "I have taken multiple trips with Fusion Traveling agency and the experience has been truly amazing. They customize packages based on your interests and provide the best prices in the market. I totally recommend Fusion Traveling Agency."
+    },
+    {
+      "id" : "2",
+      "name" : "Andre Harris",
+      "photo" : "./assets/img/clients/andre_harris.png",
+      "address" : "BROOKLYN NY (USA)",
+      "review" : "Wanderlust Expeditions exceeded my expectations! Seamless booking, personalized service, and unforgettable experiences. Highly recommend for hassle-free travel."
+    },
+    {
+      "id" : "3",
+      "name" : "Tori Vega",
+      "photo" : "./assets/img/clients/tori_vega.jpeg",
+      "address" : "Rivertown Nevada (USA)",
+      "review" : "Choosing this travel company was a game-changer. Effortless booking, meticulous planning, and personalized service made my journey extraordinary. Highly recommended for stress-free travel!"
+    },
+    {
+      "id" : "4",
+      "name" : "Robbie Shapiro",
+      "photo" : "./assets/img/clients/robbie_shapiro.jpeg",
+      "address" : "Greenville South Carolina (USA)",
+      "review" : "Exceptional service from start to finish! This travel company delivered a seamless and memorable experience. Highly recommended for stress-free travel!"
+    },
+    {
+      "id" : "5",
+      "name" : "Jade West",
+      "photo" : "./assets/img/clients/jade_west.webp",
+      "address" : "Springfield Massachusetts (USA)",
+      "review" : "Outstanding travel experience! From booking to the journey, this company delivered exceptional service. Highly recommend for a seamless and memorable adventure!"
+    }
+  ]
+}

@@ -1,0 +1,535 @@
+@media screen and (max-width: 1150px) {
+  .clientReviewTextWrapper {
+    max-width: 85%;
+  }
+
+  .clientReview_testimony {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+
+  /* *Navbar */
+  #hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    --clr-nav: hsl(0, 0%, 100%);
+  }
+
+  .navbar .leftNav {
+    left: 0;
+    right: 0;
+    top: 0;
+    width: auto;
+    padding-top: 4rem;
+    height: 100vh;
+    position: absolute;
+    transform: translateX(-1000rem);
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(73, 69, 69, 0.892);
+    padding-inline-start: 0;
+  }
+
+  .navbar .leftNav.active {
+    transform: translateX(0);
+  }
+
+
+  .rightNav {
+    display: none;
+  }
+
+  .navbar .leftNav ul {
+    flex-direction: column;
+    width: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.125rem;
+    padding-top: 2rem;
+  }
+
+  .navbar .leftNav ul li {
+    padding-inline: 0;
+    width: 100%;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+
+  .navbar .leftNav ul li a {
+    padding-inline: 1.5rem 5rem;
+    padding-block: .5rem;
+  }
+
+
+  /* ?mainBody */
+  .homeWrapper {
+    background: url("../img/home_images/flight2.jpg");
+    background-size: cover;
+
+  }
+
+  .homeText .mainHeading {
+    margin-top: 4rem;
+    font-size: 4.5rem;
+  }
+
+  .homeText .supportingText {
+    font-size: 1.2rem;
+  }
+
+  .big-btn .btn {
+    height: 2.5rem;
+    padding-inline: 2.5rem;
+  }
+
+  .homeWrapper .videoLink {
+    text-shadow: .5px .5px 1px rgba(0, 0, 0, .6), -.5px .5px 1px rgba(0, 0, 0, .6), .5px -.5px 1px rgba(0, 0, 0, .6), -.5px -.5px 1px rgba(0, 0, 0, .6);
+  }
+
+  /* *Card */
+  .card {
+    width: 13rem;
+    height: 13rem;
+    padding: 1.7rem;
+    border-radius: .865rem;
+  }
+
+  .card-icon i {
+    font-size: 2rem;
+  }
+
+  .card-heading {
+    font-size: 1rem;
+  }
+
+  .card-desc {
+    font-size: .825rem;
+  }
+
+  /* Destination */
+  .destinationTextWrapper {
+    gap: 10px;
+  }
+
+  .destinationHeading {
+    font-size: 3.5rem;
+  }
+
+  .destinationDesc {
+    font-size: 1.3rem;
+  }
+
+  .searchIcon i {
+    font-size: 1.5rem;
+  }
+
+  .searchInput input {
+    font-size: 1.3rem;
+  }
+
+  /* *------------- Destination Cards ------------* */
+  .destinationCardsWrapper.swiper {
+    height: 20rem;
+  }
+
+
+  /* * Blog Section */
+  .blogTextWrapper {
+    max-width: 95%;
+  }
+
+  .blogHeading {
+    font-size: 3.5rem;
+  }
+
+  .blogDesc {
+    font-size: 1.125rem;
+  }
+
+  .blogCardWrapper {
+    grid-template-columns: repeat(4, 10rem);
+    grid-template-rows: repeat(3, 10rem);
+  }
+
+  .blogCard .blogCardText {
+    font-size: .775rem;
+    line-height: .975rem;
+  }
+
+  #readMore {
+    height: 2.5rem;
+    padding-inline: 2.5rem;
+  }
+
+
+  /* * Client Testimony */
+  .clientReviewHeading {
+    font-size: 3rem;
+  }
+
+  .clientReviewDesc {
+    font-size: 1.275rem;
+  }
+
+  .clientReview_testimony::before,
+  .clientReview_testimony::after {
+    font-size: 14rem;
+  }
+  .clientReview_testimony::before{
+    top: -5rem;
+    left: -4.8rem;
+  }
+  .clientReview_testimony::after{
+    right: -4.8rem;
+    bottom: -13rem;
+  }
+
+  .clientReviewCard .__clientReviewCard__ {
+    width: 30rem;
+    height: 10rem;
+    justify-content: center;
+    gap: 20px;
+    padding: .7rem 1.025rem;
+  }
+  .clientReviewCardImage{
+    width: 7.5rem;
+    height: 7.5rem !important;
+  }
+  .clientReviewCardTextWrapper{
+    gap: 1rem;
+    font-size: .825rem;
+  }
+  .clientReviewText{
+    font-size: .825rem;
+  }
+  .clientDesc{
+    line-height: 1.5rem;
+  }
+  .clientName{
+    font-size: 1.4rem;
+  }
+  .clientPlace{
+    font-size: .875rem;
+  }
+  
+}
+
+@media screen and (max-width: 750px){
+  .clientReview_testimony{
+    width: 60%;
+  }
+  .clientReviewCard .__clientReviewCard__{
+    flex-direction: column;
+    height: auto !important;
+    width: 13rem !important;
+    padding-inline: .5rem !important;
+  }
+  .clientReviewCardImage{
+    height: 5rem !important;
+    width: 5rem !important;
+    border-radius: 50%;
+  }
+
+}
+/* ! Media query till screen width 700 and below */
+@media screen and (max-width: 700px) {
+  .navbar {
+    --clr-nav: #eeeeee;
+  }
+
+  .homeWrapper {
+    background: url("../img/home_images/flight3.jpeg");
+    background-size: cover;
+  }
+
+  .homeText .supportingText {
+    color: #fff;
+  }
+
+  .big-btn {
+    bottom: min(7rem, 50%);
+  }
+
+  .introHeading {
+    font-size: 2.5rem;
+  }
+
+  .introDesc p {
+    font-size: .925rem;
+  }
+
+  .destinationHeading {
+    font-size: 2.8rem;
+  }
+
+  .destinationDesc {
+    font-size: 1.012rem;
+  }
+
+  .searchIcon i {
+    font-size: 1.2rem;
+  }
+
+  .searchInput input {
+    font-size: 1.012rem;
+  }
+
+  .destination_swiper-button-next,
+  .destination_swiper-button-prev {
+    font-size: 2rem;
+  }
+
+  /* * Blog Section * */
+  .blogHeading {
+    font-size: 3rem;
+  }
+
+  .blogDesc {
+    font-size: 1rem;
+  }
+
+  .blogCardWrapper {
+    grid-template-columns: repeat(4, 8rem);
+    grid-template-rows: repeat(3, 8rem);
+  }
+
+  .blogCard .blogCardText {
+    font-size: .525rem;
+    line-height: .825rem;
+    /* overflow: hidden; */
+  }
+
+}
+
+@media screen and (max-width : 600px) {
+  .destinationTextWrapper {
+    max-width: 90%;
+  }
+
+  .destinationCardsWrapper.swiper {
+    height: 15rem;
+  }
+
+  .destinationHeading {
+    font-size: 2.4rem;
+  }
+
+  .blogTextWrapper {
+    gap: 10px;
+  }
+
+  .blogHeading {
+    font-size: 2rem;
+  }
+
+  .blogDesc {
+    font-size: .975rem;
+  }
+
+  .blogCardWrapper {
+    grid-template-columns: repeat(3, 7rem);
+    grid-template-rows: repeat(2, 7rem);
+  }
+
+  .blogCard .blogCardText {
+    display: none;
+  }
+
+  .blogCard {
+    grid-area: initial !important;
+    grid-column: initial !important;
+    grid-row: initial !important;
+    grid-template-columns: initial !important;
+    grid-template-rows: initial !important;
+    display: flex !important;
+  }
+
+  .blogCard .blogCardImage {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .clientReviewHeading{
+    font-size: 2rem;
+  }
+  .clientReviewDesc{
+    font-size: .975rem;
+  }
+
+}
+
+/* !Media query till screen width 450 and below */
+@media screen and (max-width: 450px) {
+  .navbar {
+    --clr-nav: #fceeee;
+  }
+
+  .homeText .mainHeading {
+    font-weight: 600;
+    font-size: 4rem;
+  }
+
+  .introHeading {
+    font-size: 1.845rem;
+  }
+
+  .introDesc p {
+    font-size: .825rem;
+  }
+
+  .destinationTextWrapper {
+    max-width: 95%;
+  }
+
+  .destinationHeading {
+    font-size: 1.8rem;
+  }
+
+  .destinationDesc {
+    font-size: .925rem;
+  }
+
+  .destinationCardsWrapper {
+    width: 70% !important;
+    height: 12rem;
+  }
+
+  .searchBox {
+    width: 70%;
+  }
+
+  .searchInput input {
+    width: calc(100% - 1rem);
+    font-size: .875rem;
+  }
+
+  .searchIcon i {
+    font-size: 1.025;
+  }
+
+  .blogHeading {
+    font-size: 1.5rem;
+  }
+
+  .blogDesc {
+    font-size: .825rem;
+  }
+
+  /* * Blog Cards */
+  .blogCardWrapper {
+    grid-template-columns: repeat(2, 8rem);
+    grid-template-rows: repeat(3, 8rem);
+  }
+
+  .clientReview_testimony::before, .clientReview_testimony::after{
+    content: ""
+  }
+  .clientReview_testimony{
+    width : 95%;
+  }
+  .clientReviewHeading{
+    font-size: 1.5rem;
+  }
+  .clientReviewDesc{
+    font-size: .825rem;
+  }
+
+
+}
+
+@media screen and (max-width: 380px) {
+  .homeWrapper {
+    justify-content: center;
+    align-items: start;
+  }
+
+  .big-btn {
+    position: static;
+  }
+
+  .homeText {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .mainHeading {
+    color: #333 !important;
+    font-size: 3.5rem;
+  }
+
+  .supportingText {
+    color: #333 !important;
+    align-self: flex-start;
+    font-size: .925rem;
+    padding-inline-start: 1rem;
+    font-weight: 600;
+    text-shadow: .5px .5px 1px #fff;
+  }
+
+  .introHeading {
+    font-size: 1.645rem;
+  }
+
+  .card {
+    width: 10rem;
+    height: 10rem;
+    padding: 1.243rem;
+    border-radius: .565rem;
+  }
+
+  .card-icon i {
+    font-size: 1.5rem;
+  }
+
+  .card-heading {
+    font-size: .925rem;
+  }
+
+  .card-desc {
+    font-size: .725rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+
+  .destinationCardsWrapper {
+    width: 60% !important;
+  }
+
+  .destinationHeading {
+    font-size: 1.3rem;
+  }
+
+  .destinationDesc {
+    font-size: .825rem;
+  }
+
+  .blogHeading {
+    font-size: 1.2rem;
+  }
+
+  .blogDesc {
+    font-size: .745rem;
+  }
+
+  /* * Blog Cards */
+  .blogCardWrapper {
+    grid-template-columns: repeat(2, 6rem);
+    grid-template-rows: repeat(3, 6rem);
+  }
+
+  .clientReview_testimony{
+    width: 100%;
+  }
+  .clientReviewCard .__clientReviewCard__{
+    width: 12rem !important;
+    padding-inline: .4rem !important;
+  }
+  .destinationCardsWrapper.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    display: none;
+}
+}
